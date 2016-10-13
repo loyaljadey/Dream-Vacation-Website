@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+		<style>
+			h1 {color: orange; font-family: 'Comfortaa', san-serif;}
+			h4 {color: green; font-family: 'Comfortaa', san-serif;}
+		</style>
+	
+	<head>
+		<script src="http://maps.googleapis.com/maps/api/js"></script>
+		<script>
+			function initialize() {
+  			var myCenter = new google.maps.LatLng(-34.041014,18.325195);
+  			var mapProp = {center:myCenter,zoom:7,mapTypeId:google.maps.MapTypeId.HYBRID};
+  			var marker = new google.maps.Marker({position:myCenter,});
+  			var map=new google.maps.Map(document.getElementById("googleMap2"),mapProp);marker.setMap(map);}
+  			google.maps.event.addDomListener(window, 'load', initialize);
+  			
+  			
+		</script>
+	
+		<link rel="stylesheet" type="text/css" href="stylev2.css">
+		<link rel="stylesheet" type="text/css"
+          href="https://fonts.googleapis.com/css?family=Gochi+Hand">
+        <link rel="stylesheet" type="text/css"
+          href="https://fonts.googleapis.com/css?family=Bungee+Shade">
+
+		<body>
+		 <ul>
+    
+    <li><a class="active" href="placesmap.html">Home</a></li>
+    <li class="dropdown">
+      <a href="#" class="dropbtn">Browse</a>
+      <div class="dropdown-content">
+        <a href="CC.html">The Copper Canyons</a>
+        <a href="JM.html">The Jungle Marathon</a>
+        <a href="RDJB.html"> The Rio de Janeiro Beachfront</a>
+        <a href="PIM.html">The Patagonian International Marathon</a>
+        <a href="TOM.html">The Two Oceans Marathon</a>
+        <a href="TMC.html">The Table Mountain Crossing</a>
+        <a href="CM.html">The Comrades Marathon</a>
+        <a href="SM.html">The Safaricom Marathon</a>
+        <a href="THEM.html">The Tenzing-Hillary Everest Marathon</a>
+        <a href="FM.html">The Fujisan Marathon</a>
+        
+        
+      </div>
+    </li>
+		<li><a href="Sources.html">Sources</a></li>
+		
+  </ul>
+  
+  </head>
+	
+	<body>
+		<h1>The Two Oceans Marathon</h1>
+		<img src="TOM.jpg" style="width:100%px;height:400px;">
+		<h4>Situated in Cape Town, South Africa, it is one of the scenic runs. It stretches from the coast of Hout-Bay all the way to Fish Hoek around the Cape Peninsula. The ocean location will give runners a feeling that they are not racing and they will calm down because of the ocean's sound and the smell.</h4>
+		<div id="googleMap2" style="width:100%px;height:500px;"></div>
+		
+	</body>
+
+</html>
